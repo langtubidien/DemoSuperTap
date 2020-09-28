@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DemoSuperTap</string>
+    <string name="location_permission_denied">Denied location permission</string>
+    <string name="permission_required_toast">Need enable location permission</string>
+    <string name="permission_rationale_location">permission raotion</string>
+    <string name="maps_api_key">AIzaSyBWRPKxsAATVrPMf9R-WVp8pdD6FBeHkDw</string>
+</resources>
