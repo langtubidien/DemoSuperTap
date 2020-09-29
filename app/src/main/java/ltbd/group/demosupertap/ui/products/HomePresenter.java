@@ -1,4 +1,4 @@
-package ltbd.group.demosupertap.ui.main;
+package ltbd.group.demosupertap.ui.products;
 
 import android.util.Log;
 
@@ -14,11 +14,11 @@ import retrofit2.Response;
 /**
  * Created by ltbd on 9/26/20.
  */
-public class MainPresenter extends BasePresenter<MainContract.View> implements MainContract.Presenter {
+public class HomePresenter extends BasePresenter<HomeContract.View> implements HomeContract.Presenter {
     private Disposable disposable;
 
     @Override
-    public void attachView(MainContract.View mvpView) {
+    public void attachView(HomeContract.View mvpView) {
         super.attachView(mvpView);
     }
 

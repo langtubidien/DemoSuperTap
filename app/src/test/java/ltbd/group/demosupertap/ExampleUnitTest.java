@@ -1,11 +1,7 @@
 package ltbd.group.demosupertap;
 
-import com.google.gson.Gson;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.mockito.ArgumentCaptor;
-import org.mockito.Captor;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,10 +11,9 @@ import io.reactivex.android.plugins.RxAndroidPlugins;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.internal.schedulers.ExecutorScheduler;
 import io.reactivex.plugins.RxJavaPlugins;
-import ltbd.group.demosupertap.mocdata.MockInterceptor;
 import ltbd.group.demosupertap.models.MainData;
-import ltbd.group.demosupertap.ui.main.MainContract;
-import ltbd.group.demosupertap.ui.main.MainPresenter;
+import ltbd.group.demosupertap.ui.products.HomeContract;
+import ltbd.group.demosupertap.ui.products.HomePresenter;
 
 import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
@@ -57,9 +52,9 @@ public class ExampleUnitTest {
 
     @Test
     public void testCallApi() {
-        MainPresenter presenter = new MainPresenter();
+        HomePresenter presenter = new HomePresenter();
         // 3
-        MainContract.View view = mock(MainContract.View.class);
+        HomeContract.View view = mock(HomeContract.View.class);
         presenter.attachView(view);
         // 4
         presenter.getFetchData();
